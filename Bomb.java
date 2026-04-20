@@ -4,7 +4,7 @@ public class Bomb extends Actor
 {
     public void act()
     {
-        move(-10);
+        move(-15);
         
         if(getX() <= 0)
         {
