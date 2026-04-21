@@ -8,5 +8,8 @@ public class MyWorld extends World {
 
         Hero hero = new Hero();
         addObject(hero, 100, 100);
+        
+        Skull skull = new Skull();
+        addObject(skull, 300, 200);
     }
 }
