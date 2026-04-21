@@ -10,6 +10,13 @@ public class Bomb extends Actor
         {
             resetBomb();
         }
+        
+        if(isTouching(Hero.class))
+        {
+            Skull skull = new Skull();
+            getWorld().addObject(skull, 300, 200);
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetBomb()
