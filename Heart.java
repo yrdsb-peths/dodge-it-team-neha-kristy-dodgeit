@@ -5,7 +5,7 @@ public class Heart extends Actor
     public Heart()
     {
         GreenfootImage img = getImage();
-        img.scale(10, 10);
+        img.scale(15, 15);
         setImage("herz.png");       
     }
      public void act()
