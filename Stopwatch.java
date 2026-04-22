@@ -31,4 +31,9 @@ public class Stopwatch extends Actor
     {
         setImage(new GreenfootImage("Time: " + seconds, 24, Color.WHITE, Color.BLACK));
     }
+    
+    public int getSeconds()
+    {
+        return seconds;
+    }
 }
