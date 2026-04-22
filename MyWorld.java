@@ -10,7 +10,13 @@ public class MyWorld extends World {
         addObject(hero, 100, 100);
         
         Heart heart1 = new Heart();
-        addObject(heart1, 450, 40); 
+        addObject(heart1, 490, 40); 
+        
+        Heart heart2 = new Heart();
+        addObject(heart2, 530, 40);
+        
+        Heart heart3 = new Heart();
+        addObject(heart3, 570, 40);
 
         Stopwatch stopwatch = new Stopwatch();
         addObject(stopwatch, 50, 400);
