@@ -11,5 +11,8 @@ public class MyWorld extends World {
         
         Heart heart1 = new Heart();
         addObject(heart1, 450, 40); 
+
+        Stopwatch stopwatch = new Stopwatch();
+        addObject(stopwatch, 50, 400);
     }
 }
