@@ -5,7 +5,7 @@ public class Bomb extends Actor
     public Bomb() 
     {
         GreenfootImage img = getImage();
-        setImage(img);
+        setImage("bomb.png");
     }
         
     public void act()
