@@ -1,14 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class Skull extends Actor
+public class Heart extends Actor
 {
-    public Skull()
+    public Heart()
     {
         GreenfootImage img = getImage();
-        setImage(img);
+        img.scale(30, 30);
+        setImage(img);       
     }
-    public void act()
+     public void act()
     {
-                
+
     }
 }

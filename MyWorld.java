@@ -9,6 +9,9 @@ public class MyWorld extends World {
         Hero hero = new Hero();
         addObject(hero, 100, 100);
         
+        Heart heart1 = new Heart();
+        addObject(heart1, 450, 40); 
+
         Stopwatch stopwatch = new Stopwatch();
         addObject(stopwatch, 55, 375);
     }
