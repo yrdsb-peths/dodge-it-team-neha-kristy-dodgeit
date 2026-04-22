@@ -10,6 +10,6 @@ public class MyWorld extends World {
         addObject(hero, 100, 100);
         
         Stopwatch stopwatch = new Stopwatch();
-        addObject(stopwatch, 50, 400);
+        addObject(stopwatch, 55, 375);
     }
 }
