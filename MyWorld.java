@@ -9,11 +9,20 @@ public class MyWorld extends World {
         Hero hero = new Hero();
         addObject(hero, 100, 100);
         
-        Stopwatch stopwatch = new Stopwatch();
-        addObject(stopwatch, 50, 400);
+        Heart heart1 = new Heart();
+        addObject(heart1, 490, 40); 
         
-        addObject(new Stopwatch(), 100, 50);
-        addObject(new LevelDisplay(), 100, 100);
+        Heart heart2 = new Heart();
+        addObject(heart2, 530, 40);
+        
+        Heart heart3 = new Heart();
+        addObject(heart3, 570, 40);
+
+        Stopwatch stopwatch = new Stopwatch();
+        addObject(stopwatch, 55, 375);
+        
+        LevelDisplay leveldisplay = new LevelDisplay();
+        addObject(leveldisplay, 60, 20);
     }
     
 }

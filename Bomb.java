@@ -2,6 +2,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Bomb extends Actor
 {
+    public Bomb() 
+    {
+        GreenfootImage img = getImage();
+        setImage(img);
+    }
+        
     public void act()
     {
         move(-15);

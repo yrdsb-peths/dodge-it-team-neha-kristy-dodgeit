@@ -9,6 +9,12 @@ public class LevelDisplay extends Actor
         updateLevel();
     }
 
+    
+    public LevelDisplay()
+    {
+        updateImage();
+    }
+    
     private void updateLevel()
     {
         World world = getWorld();
