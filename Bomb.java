@@ -7,7 +7,10 @@ public class Bomb extends Actor
         GreenfootImage img = getImage();
         setImage(img);
     }
-        
+    
+    private int touchCount = 0;
+    private boolean touching = false;
+    
     public void act()
     {
         move(-15);
@@ -17,12 +20,42 @@ public class Bomb extends Actor
             resetBomb();
         }
         
+        
+        
         if(isTouching(Hero.class))
         {
-            Skull skull = new Skull();
-            getWorld().addObject(skull, 300, 200);
-            getWorld().removeObject(this);
+            if(!touching)
+            {
+               touchCount ++; 
+               touching = true;
+            
+                MyWorld world = (MyWorld) getWorld();
+    
+                if(touchCount == 1)
+                {
+                    getWorld().removeObject(world.heart3);
+                }
+                
+                else if(touchCount == 2)
+                {
+                    getWorld().removeObject(world.heart2);
+                }
+                
+                else if(touchCount == 3)
+                {
+                    getWorld().removeObject(world.heart1);
+                    Skull skull = new Skull();
+                    getWorld().addObject(skull, 300, 200);
+                    getWorld().removeObject(this);                  
+                }
+            }
+        }  
+        else
+        {
+            touching = false;
         }
+
+
     }
     
     public void resetBomb()

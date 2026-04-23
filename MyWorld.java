@@ -1,6 +1,11 @@
 import greenfoot.*;
 
 public class MyWorld extends World {
+    public Heart heart1;
+    public Heart heart2;
+    public Heart heart3;
+
+
     public MyWorld() {
         super(600, 400, 1);
         Bomb bomb = new Bomb();
@@ -9,13 +14,13 @@ public class MyWorld extends World {
         Hero hero = new Hero();
         addObject(hero, 100, 100);
         
-        Heart heart1 = new Heart();
+        heart1 = new Heart();
         addObject(heart1, 490, 40); 
         
-        Heart heart2 = new Heart();
+        heart2 = new Heart();
         addObject(heart2, 530, 40);
         
-        Heart heart3 = new Heart();
+        heart3 = new Heart();
         addObject(heart3, 570, 40);
 
         Stopwatch stopwatch = new Stopwatch();
