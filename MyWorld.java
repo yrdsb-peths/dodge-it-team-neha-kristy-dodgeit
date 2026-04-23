@@ -25,5 +25,9 @@ public class MyWorld extends World {
 
         Stopwatch stopwatch = new Stopwatch();
         addObject(stopwatch, 55, 375);
+        
+        LevelDisplay leveldisplay = new LevelDisplay();
+        addObject(leveldisplay, 60, 20);
     }
+    
 }
