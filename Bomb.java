@@ -33,7 +33,7 @@ public class Bomb extends Actor
     
                 if(touchCount == 1)
                 {
-                    getWorld().removeObject(world.heart3);
+                    getWorld().removeObject(world.heart1);
                 }
                 
                 else if(touchCount == 2)
@@ -43,7 +43,7 @@ public class Bomb extends Actor
                 
                 else if(touchCount == 3)
                 {
-                    getWorld().removeObject(world.heart1);
+                    getWorld().removeObject(world.heart3);
                     Skull skull = new Skull();
                     getWorld().addObject(skull, 300, 200);
                     getWorld().removeObject(this);                  
