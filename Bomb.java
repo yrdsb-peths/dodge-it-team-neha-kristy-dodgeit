@@ -2,6 +2,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Bomb extends Actor
 {
+    private int speed = -15;
+    private int timer = 0;
     public Bomb() 
     {
         GreenfootImage img = getImage();
@@ -13,8 +15,15 @@ public class Bomb extends Actor
     
     public void act()
     {
-        move(-15);
+        move(speed);
         
+        timer++;
+
+        if(timer >= 600) 
+        {
+            speed -= 2; 
+            timer = 0;
+        }
         if(getX() <= 0)
         {
             resetBomb();
