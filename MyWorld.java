@@ -27,7 +27,7 @@ public class MyWorld extends World {
         addObject(stopwatch, 55, 375);
         
         LevelDisplay leveldisplay = new LevelDisplay();
-        addObject(leveldisplay, 60, 20);
+        addObject(leveldisplay, 55, 25);
     }
     
 }
