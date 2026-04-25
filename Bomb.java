@@ -13,7 +13,7 @@ public class Bomb extends Actor
     
     public void act()
     {
-        move(-15);
+        move(-10);
         
         if(getX() <= 0)
         {
