@@ -15,7 +15,11 @@ public class Bomb extends Actor
     
     public void act()
     {
+<<<<<<< HEAD
         move(speed);
+=======
+        move(-10);
+>>>>>>> 1c4e221700cc4ec6281c6037d277fb080e5e6523
         
         timer++;
 
@@ -42,7 +46,7 @@ public class Bomb extends Actor
     
                 if(touchCount == 1)
                 {
-                    getWorld().removeObject(world.heart3);
+                    getWorld().removeObject(world.heart1);
                 }
                 
                 else if(touchCount == 2)
@@ -52,7 +56,7 @@ public class Bomb extends Actor
                 
                 else if(touchCount == 3)
                 {
-                    getWorld().removeObject(world.heart1);
+                    getWorld().removeObject(world.heart3);
                     Skull skull = new Skull();
                     getWorld().addObject(skull, 300, 200);
                     getWorld().removeObject(this);                  
