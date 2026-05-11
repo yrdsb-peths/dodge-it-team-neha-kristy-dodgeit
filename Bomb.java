@@ -15,12 +15,7 @@ public class Bomb extends Actor
     
     public void act()
     {
-<<<<<<< HEAD
         move(speed);
-=======
-        move(-10);
->>>>>>> 1c4e221700cc4ec6281c6037d277fb080e5e6523
-        
         timer++;
 
         if(timer >= 600) 
